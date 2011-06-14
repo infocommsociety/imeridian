@@ -1,0 +1,29 @@
+<h1>Listing homeworks</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Due date</th>
+    <th>Cg</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @homeworks.each do |homework| %>
+  <tr>
+    <td><%= homework.content %></td>
+    <td><%= homework.due_date %></td>
+    <td><%= homework.cg_id %></td>
+    <td><%= homework.user_id %></td>
+    <td><%= link_to 'Show', homework %></td>
+    <td><%= link_to 'Edit', edit_homework_path(homework) %></td>
+    <td><%= link_to 'Destroy', homework, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Homework', new_homework_path %>

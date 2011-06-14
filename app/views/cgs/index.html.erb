@@ -1,0 +1,23 @@
+<h1>Listing cgs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cgs.each do |cg| %>
+  <tr>
+    <td><%= cg.name %></td>
+    <td><%= link_to 'Show', cg %></td>
+    <td><%= link_to 'Edit', edit_cg_path(cg) %></td>
+    <td><%= link_to 'Destroy', cg, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cg', new_cg_path %>

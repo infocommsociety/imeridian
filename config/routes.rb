@@ -1,4 +1,16 @@
 Imeridian::Application.routes.draw do
+  resources :notes
+
+  resources :homeworks
+
+  resources :comments
+
+  resources :microposts
+
+  resources :users
+
+  resources :cgs
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
