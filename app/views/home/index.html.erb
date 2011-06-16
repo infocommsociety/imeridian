@@ -1,2 +1,66 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>iMeridian</title>
+<style type="text/css" media="screen">@import "../../jqtouch/jqtouch.css";</style>
+<style type="text/css" media="screen">@import "../../themes/artspot/theme.css";</style>
+<script src="../../jqtouch/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+<style type="text/css" media="screen">
+#jqt.fullscreen #ui .info,
+#jqt.fullscreen #plastic .info {
+  display:none;
+}
+#jqt #about {
+  font-size:13px;
+  text-align:center;
+  text-shadow:rgba(255, 255, 255, 0.3) 0 -1px 0;
+}
+#jqt #about p {
+  margin-bottom:8px;
+}
+#jqt #about > div > div > p > a, h2 {
+  color:inherit;
+  font-weight:700;
+  text-decoration:none;
+}
+</style>
+<script type="text/javascript" charset="utf-8">
+var jQT = new $.jQTouch({
+  icon: 'jqtouch.png',
+  icon4: 'jqtouch4.png',
+  addGlossToIcon: false,
+  slideleftSelector: '#jqt > ul > li > a, #jqt > ol > li > a',
+  startupScreen: 'jqt_startup.png',
+  statusBar: 'black',
+  useFastTouch: true
+});
+
+</script>
+</head>
+<body>
+
+	<div id="home" class="current">
+        <div class="toolbar">
+            <h1>iMeridian</h1>
+            <a class="button slideup" id="infoButton" href="#signin">Sign In</a>
+        </div>
+        <ul class="plastic">
+            <li class="arrow"><a href="/microposts">Meridian Buzz</a></li>
+            <li class="arrow"><a href="/homeworks">Homework</a></li>
+<li class="arrow"><a href="/notes">My Notebook</a></li>
+
+        </ul>
+        <h2>External Links</h2>
+        <ul class="individual">
+            <li><a href="mailto:ryan@xwaylab.com">Feedback</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="info">
+            <p>Add this page to your home screen to view the custom icon, startup screen, and full screen mode.</p>
+        </div>
+    </div>
+
+</body>
+</html>

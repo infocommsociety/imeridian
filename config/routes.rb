@@ -1,5 +1,4 @@
 Imeridian::Application.routes.draw do
-  get "home/index"
 
   resources :notes
 
@@ -12,6 +11,8 @@ Imeridian::Application.routes.draw do
   resources :users
 
   resources :cgs
+  
+  root :to => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
