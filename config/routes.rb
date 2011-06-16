@@ -1,4 +1,6 @@
 Imeridian::Application.routes.draw do
+  get "home/index"
+
   resources :notes
 
   resources :homeworks
